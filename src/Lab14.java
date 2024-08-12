@@ -11,6 +11,7 @@ public class Lab14 {
 
     }
     // Task 2: Countdown from N to 1 (Do-While Loop)
+    //new code
     // Instruction: Write a program that takes user input for a number N and prints a countdown from N to 1 using a do-while loop.
     // Expected Result: If the user inputs 5, the output should be "5 4 3 2 1".
     public static void countdownDoWhile() {
