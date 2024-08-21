@@ -13,9 +13,10 @@ public class Homework15 {
         int N1=n1.nextInt();
         int i1=1;
         while (i1<=N1){
-            System.out.println(i1);
+            System.out.print(i1 + " ");
             i1++;
         }
+        System.out.println("");
     }
 
     // Task 2: do-while Loop - User Input Validation
@@ -56,7 +57,7 @@ public class Homework15 {
         System.out.println("eded daxil edin: ");
         int N4=n4.nextInt();
         for(int i4: num4){
-            System.out.println(N4 + "*" + i4 + N4*i4);
+            System.out.println(N4 + "*" + i4 + "=" + N4*i4);
         }
 
     }
@@ -98,8 +99,10 @@ public class Homework15 {
         Scanner n7=new Scanner (System.in);
         System.out.println("N7 ededini daxil edin");
         int N7=n7.nextInt();
-        for(int i7: num_7){
-            System.out.println(N7 + "*" + i7 + N7*i7);
+        for(int i7=1; i7<=N7;i7++ ){
+            for (int i77=1;i77<=10;i77++){
+                System.out.println(i7 + "*" + i77 + "=" + i7*i77);
+            }
         }
     }
 
@@ -112,9 +115,10 @@ public class Homework15 {
         System.out.println("N8 ededini daxil edin.");
         int N8=n8.nextInt();
         int i8=2;
-        while (i8<=N8){
-            System.out.print(i8);
+        while (N8>=1){
+            System.out.print(i8 + " ");
             i8+=2;
+            N8--;
         }
         System.out.println(" ");
     }

@@ -89,6 +89,7 @@ public class Homework14 {
             N5/=10;
         }
         while (N5>0);
+        System.out.println("");
     }
 
     // Task 6: Calculate Factorial of a Number (For Loop)
@@ -100,7 +101,7 @@ public class Homework14 {
         System.out.println("N6 ededini daxil edin: ");
         int S6=1;
         int i6=n6.nextInt();
-        for(int N6=n6.nextInt(); N6>=1; N6-- ){
+        for(int N6=i6 ; N6>=1; N6-- ){
             S6*=N6;
         }
         System.out.println(i6 + "!=" + S6);
@@ -115,7 +116,7 @@ public class Homework14 {
         System.out.println("N7 ededini daxil edin: ");
         int N7=n7.nextInt();
         while (N7>=1){
-            System.out.print(N7);
+            System.out.print(N7 + " ");
             N7--;
         }
         System.out.println(" ");
@@ -131,11 +132,11 @@ public class Homework14 {
         int N8=n8.nextInt();
         int i8=1;
         do {
-            System.out.print(i8);
+            System.out.print(i8 + " ");
             i8+=2;
         }
         while (i8<=N8);
-        System.out.println(" ");
+        System.out.println("");
     }
 
     // Task 9: Count Down from N to 1 (For Loop)
@@ -146,9 +147,9 @@ public class Homework14 {
         Scanner n9=new Scanner(System.in);
         System.out.println("N9 ededini daxil edin: ");
         for( int N9=n9.nextInt() ; N9>=1 ; N9-- ){
-            System.out.print(N9);
+            System.out.print(N9 + " ");
         }
-        System.out.println("  ");
+        System.out.println("");
     }
 
     // Task 10: Print Sum of Numbers from 1 to N (While Loop)
@@ -164,6 +165,7 @@ public class Homework14 {
             S10+=N10;
             N10--;
         }
+        System.out.println("Sum: " + S10);
     }
 
     public static void main(String[] args) {

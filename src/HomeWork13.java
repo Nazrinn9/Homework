@@ -118,7 +118,7 @@ public class HomeWork13 {
         // Implementation here
         Scanner numm6= new Scanner (System.in);
         System.out.println("BMI daxil edin: ");
-        int num6=numm6.nextInt();
+        double num6=numm6.nextDouble();
         if (num6<18.5){
             System.out.println("Underweight");
         }
@@ -158,6 +158,7 @@ public class HomeWork13 {
         System.out.println("Add month number: ");
         int num8=numm8.nextInt();
         int[] num_8={1,3,5,7,8,10,12};
+        int count=0;
         if (num8>=1 || num8<=12){
             if (num8==2){
                 System.out.println("28 or 29 days.");
@@ -166,15 +167,37 @@ public class HomeWork13 {
                 for(int n8: num_8){
                     if (num8==n8){
                         System.out.println("31 days.");
+                        count++;
+                        break;
                     }
-                    else {
-                        System.out.println("30 days");
+                if (count==0){
+                    System.out.println("30 days");
+                    break;
                     }
                 }
             }
         }
         else {
             System.out.println("Invalid month number.");
+        }
+    }
+
+    public static void switchDetermineDaysInMonth(){
+        Scanner month= new Scanner (System.in);
+        System.out.println("Add month number: ");
+        int monthNumber=month.nextInt();
+        switch (monthNumber){
+            case 1:     case 3:     case 5:     case 7:     case 8:     case 10:     case 12:
+                System.out.println("31 days.");
+                break;
+            case 2:
+                System.out.println("28 or 29 days.");
+                break;
+            case 4:     case 6:     case 9:     case 11:
+                System.out.println("30 days.");
+                break;
+            default:
+                System.out.println("Invalid month number.");
         }
     }
 
@@ -249,6 +272,7 @@ public class HomeWork13 {
         categorizeBMI();
         checkVotingEligibility();
         determineDaysInMonth();
+        switchDetermineDaysInMonth();
         checkTemperature();
         convertNumberToWord();
         switchStringInput();
